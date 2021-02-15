@@ -1,0 +1,562 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html, body{
+    height: 100%;
+}
+
+.clear{
+    clear: both;
+}
+
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+header{
+    min-height: 800px;
+    width: 100%;
+    height: 90vh;
+    padding: 40px 2%;
+    max-height: 700px;
+    background-size: cover;
+    background-position: center;
+    background-image: url(images/capa.png);
+}
+
+header .logo{
+    float: left;
+    width: 160px;
+    height: 90px;
+    background-color: #CCC;
+}
+
+header nav{
+    float: right;
+}
+
+nav.mobile-menu{
+    cursor: pointer;
+    display: none;
+    width: 32px;
+    height: 32px;
+    background-image: url(images/menu.png);
+    background-size: 100% 100%;
+}
+
+nav.mobile-menu:hover ul{
+	opacity: 1;
+}
+
+nav.mobile-menu ul{
+	opacity: 0;
+	transition: 1s;
+	background-color: white;
+	position: absolute;
+	width: 100%;
+	left: 0;
+	top: 80px;
+	list-style-type: none;
+	text-align: center;
+}
+
+
+nav.mobile-menu ul li{
+    border-bottom: 1px solid black;
+    padding: 8px 0;
+}
+
+nav.mobile-menu ul li a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+header nav.desktop-menu ul{
+    list-style-type: none;
+}
+
+header nav.desktop-menu li{
+    float: left;
+    padding: 0 15px;
+}
+
+header nav.desktop-menu ul a{
+    text-decoration: none;
+    color: white;
+}
+
+.chamada1{
+    max-width: 600px;
+    float: right;
+    margin: 140px 45px;
+}
+
+.chamada1 h2{
+    font-size: 30px;
+    color: white;
+    font-weight: normal;
+}
+
+.chamada1 p{
+    font-size: 15px;
+    color: white;
+    margin-top: 10px;
+}
+
+section.sessao1{
+    width: 100%;
+    background-color: #472562;
+    padding-right: 2%;
+    padding-left: 2%;
+    height: 400px;
+}
+
+section.sessao1 .container{
+    max-width: 1000px;
+    height: calc(100% + 30px);
+}
+
+.texto-sessao1{
+    float: left;
+    width: 50%;
+    position: relative;
+    left: 65px;
+    color: white;
+    padding-left: 80px;
+    margin-top: 60px;
+}
+
+.texto-sessao1 h2{
+    font-weight: 26px;
+    font-weight: 300;
+}
+
+.texto-sessao1 p{
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+.texto-sessao1 ul{
+    font-size: 15px;
+    list-style-position: inside;
+}
+
+.texto-sessao1 ul li{
+    float: left;
+    width: 100%;
+    margin-top: 8px;
+}
+
+.btn1-texto{
+    width: 165px;
+    color: white;
+    cursor: pointer;
+    height: 44px;
+    background-color: #FF703D;
+    margin-top: 16px;
+    text-align: center;
+    line-height: 44px;
+    border-radius: 20px;
+    font-size: 13px;
+}
+
+.sessao2{
+    padding-left: 2%;
+    padding-right: 2%;
+    background-color: white;
+    text-align: center;
+}
+
+.sessao2 h2{
+    color:#472663;
+    font-weight: 300;
+}
+
+.sessao2 p{
+    margin-top: 30px;
+    max-width: 680px;
+    display: inline-block;
+}
+
+.sessao2 .container{
+    max-width: 1000px;
+}
+
+.device-sessao1{
+    float: left;
+    width: 50%;
+    position: relative;
+    top: -30px;
+    height: 430px;
+    background-image: url(images/device.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.sessao2 img{
+    position: relative;
+    top: 85px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.sessao3{
+    width: 100%;
+
+}
+
+.parte1{
+    color: white;
+    float: left;
+    width: 50%;
+    padding: 140px 90px 0;
+    background: #835FA7;
+}
+
+.wraper-parte1{
+    max-width: 600px;
+    float: right;
+    padding: 0 30px;
+}
+
+.parte1 h2{
+    font-weight: 300;
+    font-style: italic;
+    font-size: 30px;
+}
+
+.parte1 p{
+    font-size: 16px;
+    line-height: 25px;
+    margin-top: 10px;
+    margin-bottom: 10%;
+}
+
+.parte2{
+    float: left;
+    width: 50%;
+    padding: 140px 0 90px 0;
+}
+
+.sobre-autor{
+    float: left;
+    max-width: 600px;
+    padding-left: 30px;
+}
+
+.titulo-autor{
+    float: left;
+    width: 100%;
+}
+
+.wraper-titulo-autor{
+
+    float: left;
+}
+
+.titulo-autor h2{
+    color: #233223;
+    font-weight: 400;
+    font-size: 25px;
+    padding-right: 20px;
+}
+
+.texto-autor p{
+    color: #232323;
+    font-size: 15px;
+}
+
+.titulo-autor p {
+    font-size: 15px;
+    color:#233223;
+    font-style: italic;
+    font-style: 300;
+}
+
+.titulo-autor .img-autor{
+    float: left;
+    width: 60px;
+    padding-top: 60px;
+    position: relative;
+    top: -4px;
+    background-color: rgb(0, 0, 0); /* trocar por foto da pessoa */
+    border-radius: 100px;
+}
+
+.texto-autor{
+    float: left;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.slider-bullets{
+    width: 100%;
+    float: left;
+    margin-top: 12px;
+    padding-left: 30px;
+}
+
+.slider-bullets span{
+    width: 16px;
+    height: 16px;
+    float: left;
+    cursor: pointer;
+    margin-right:8px;
+    border-radius: 8px;
+    background-color: #CCC;
+}
+
+section.sessao4{
+    background: #472563;
+    height: 100%;
+    padding: 100px 0;
+}
+
+section.sessao4 .container{
+    text-align: center;
+}
+
+.form{
+    float: left;
+	width: 50%;
+	color: white;
+	padding-left: 10px;
+}
+
+.form h2{
+	font-size: 23px;
+	font-weight: 300;
+}
+
+.form p{
+    margin-left: 20%;
+	font-size: 15px;
+	font-weight: 300;
+	max-width: 400px;
+	padding-right: 10px;
+}
+
+.form form{
+    margin-top: 15px;
+}
+
+.form form textarea{
+	width: 90%;
+	margin-top:8px;
+	max-width: 480px;
+	padding:15px;
+	border:1px solid rgb(200,200,200);
+	height: 160px;
+}
+
+.form form input[type=text]{
+	width: 90%;
+	max-width: 480px;
+	margin-top:8px;
+	height: 58px;
+	padding-left: 8px;
+	line-height: 58px;
+	border:1px solid rgb(200,200,200);
+}
+
+.form form input[type=submit]{
+    width: 165px;
+    color: white;
+    cursor: pointer;
+    height: 44px;
+    background-color: #FF703D;
+    margin-top: 16px;
+    border-radius: 20px;
+    font-size: 13px;
+    border: 0;
+}
+
+.map-wraper{
+    float: right;
+    width: 50%;
+}
+
+.form p{
+    float: none;
+}
+
+.map-wraper h2{
+    font-size: 23px;
+    font-weight: 300;
+    padding: 0 10px;
+    color: white;
+}
+
+.map-wraper3{
+    margin-top: 10px;
+    width: 100%;
+    display: inline-block;
+    max-width: 480px;
+    position: relative;
+}
+
+.map-wraper2{
+	position: absolute;
+	left: 0;
+	top:0;
+	width: 100%;
+	padding-top:100%;
+}
+
+.map{
+	left: 0;
+	top: 0;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: white;
+	border:5px solid rgb(200,200,200);
+}
+
+
+
+@media screen and (max-width: 830px){
+
+    .chamada1{
+        max-width: none;
+        width: 100%;
+        text-align: center;
+        float: none;
+        margin: 170px 0;
+    }
+  
+    .chamada1 h2{
+        font-size: 25px;
+        color: white;
+        font-weight: normal;
+    }
+    
+    .chamada1 p{
+        font-size: 15px;
+        color: white;
+        margin-top: 10px;
+    }
+}
+
+
+
+@media screen and (max-width: 768px){
+    section.sessao4{
+        height: 175%;
+    }
+    .map-wraper3{
+        align-items: center;
+        text-align: center;
+        margin-top: 10px;
+        width: 80%;
+        padding: 0 4%;
+        display: inline-block;
+        max-width: none;
+        position: relative;
+    }
+    
+    .map-wraper2{
+        position: absolute;
+        width: 100%;
+        padding-top: 100%;
+        display: inline-block;
+        left: 0;
+        top: 0;
+        height: 100%;
+        max-width: 480px;
+    }
+
+    header{
+        width: 100%;
+        height: auto;
+        min-height: 90vh;
+    }
+
+    nav.desktop-menu{
+        display: none;
+    }
+
+    nav.mobile-menu{
+        display: block;
+    }
+
+
+
+    section.sessao1{
+        padding: 40px 2%;
+        height: auto;
+        text-align: center;
+    }  
+
+    .btn1-texto{
+        display: inline-block;
+    }
+
+    .texto-sessao1 ul li{
+        float: none ;
+        text-align: left;
+    }
+
+    .texto-sessao1 ul {
+        display: inline-block;
+        margin-top: 20px;
+    }
+
+    .texto-sessao1{
+        width: 100%;
+        margin-top: 0;
+        position: static;
+        padding-left: 0;
+        float: none;
+        display: inline-block;
+    }
+
+    .device-sessao1{
+        display: none;
+    }
+
+    .sessao2{
+        padding-top: 80px 2%;
+    }
+
+    .sessao2 h2{
+        padding-top: 60px;
+    }
+
+    .sessao2 img{
+        padding:5%;
+    }
+
+    .form{
+        width: 100%;
+    }
+
+    .form p{
+        display: inline-block;
+    }
+
+    .map-wraper{
+        float: none;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 640px){
+    .sessao2 img{
+        top: 10px;
+        margin-top: 30;
+    }
+    .parte1{
+        width: 100%;
+        padding: 40px 0;
+    }
+    .parte2{
+        padding: 40px 0;
+        width: 100%;
+    }
+}
